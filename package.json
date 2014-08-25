@@ -1,6 +1,6 @@
 {
   "name": "homework-server",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A node js webserver built to collect homework.  This server is a sample tutorial for learning.",
   "main": "server.js",
   "scripts": {
