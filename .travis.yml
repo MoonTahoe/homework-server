@@ -3,9 +3,9 @@ node_js:
 - '0.11'
 - '0.10'
 before_script:
-  - npm install -g mocha
+- npm install -g mocha
 deploy:
   provider: heroku
   api_key:
-    secure:
+    secure: hYi/VGBmcVQZyp2cMV4DOUUYneZqf69+py8W5H4Fhzs5BN+CJbNSaTzYKin5uhop1Lc8Gnm0vgoA/Abzu0krFkDohMZEzAPGDw7wyOC9ndzh5AQzBT9dAXD9q6R8IrXRrRMfu44MvQ/lYtZtxw1XbxgVjkNbY1nv78IubdMTB98=
   app: homework-server
