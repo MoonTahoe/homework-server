@@ -164,7 +164,7 @@ exports.app = http.createServer(function (req, res) {
         console.log("File Not Found");
         serveFile(404, "File Not Found", res, "text/plain");
     }
-}).listen(argv.port || 3000);
+}).listen(argv.port || process.env.PORT || 3000);
 exports.renderTemplate = renderTemplate;
 
 console.log("Homework server listening on port " + (argv.port || 3000));
