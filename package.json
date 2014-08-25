@@ -1,32 +1,35 @@
 {
-    "name": "homework-server",
-    "version": "0.0.0",
-    "description": "A node js webserver built to collect homework.  This server is a sample tutorial for learning.",
-    "main": "server.js",
-    "scripts": {
-        "start": "node app.js",
-        "test": "mocha -R list --recursive"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/MoonTahoe/homework-server.git"
-    },
-    "keywords": [
-        "node",
-        "js",
-        "server",
-        "tutorial",
-        "upload"
-    ],
-    "author": "Moon Highway (Alex Banks)",
-    "license": "MIT",
-    "dependencies": {
-        "formidable": "^1.0.15",
-        "optimist": "^0.6.1"
-    },
-    "devDependencies": {
-        "mocha": "^1.21.4",
-        "restless": "0.0.10",
-        "should": "^4.0.4"
-    }
+  "name": "homework-server",
+  "version": "0.0.1",
+  "description": "A node js webserver built to collect homework.  This server is a sample tutorial for learning.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha -R list --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MoonTahoe/homework-server.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "server",
+    "tutorial",
+    "upload"
+  ],
+  "author": "Moon Highway (Alex Banks)",
+  "license": "MIT",
+  "dependencies": {
+    "formidable": "^1.0.15",
+    "optimist": "^0.6.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bump": "0.0.15",
+    "grunt-contrib-jshint": "^0.10.0",
+    "mocha": "^1.21.4",
+    "restless": "0.0.10",
+    "should": "^4.0.4"
+  }
 }
