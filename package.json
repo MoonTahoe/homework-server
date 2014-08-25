@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node app.js",
-    "test": "mocha -R list --recursive"
+    "test": "grunt check; mocha -R list --recursive"
   },
   "repository": {
     "type": "git",

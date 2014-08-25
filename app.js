@@ -25,7 +25,7 @@ var http = require('http'),
 function renderTemplate(obj, template) {
     var key;
     for (key in obj) {
-        var replaceAll = new RegExp('{{' + key + '}}', 'g')
+        var replaceAll = new RegExp('{{' + key + '}}', 'g');
         template = template.replace(replaceAll, obj[key]);
     }
     return template;
@@ -58,10 +58,10 @@ function renderTemplate(obj, template) {
  */
 function serveFile(code, url, res, type, fields) {
 
-    if (type == 'text/plain') {
+    if (type === 'text/plain') {
         res.writeHead(code, {'Content-Type': type});
         res.end(url);
-    } else if (type == 'application/json') {
+    } else if (type === 'application/json') {
         res.writeHead(200, {
             'Content-Type': 'application/json',
             'Access-Control-Allow-Headers': 'X-Requested-With, Content-Type',
@@ -108,7 +108,7 @@ function serveAdmin(req, res) {
                 listItems += '<li>' + file + '</li>';
             });
 
-            if (req.headers.accept.indexOf('application/json') == -1 || req.headers.accept.indexOf('text/javascript') == -1) {
+            if (req.headers.accept.indexOf('application/json') === -1 || req.headers.accept.indexOf('text/javascript') === -1) {
                 serveFile(200, '/report.html', res, 'text/html', {
                     count: files.length,
                     files: listItems
@@ -152,13 +152,13 @@ function saveHomework(req, res) {
  * @type {http.Server}
  */
 exports.app = http.createServer(function (req, res) {
-    if (req.url.indexOf('css') != -1) {
+    if (req.url.indexOf('css') !== -1) {
         serveFile(200, req.url, res, 'text/css');
-    } else if (req.url == "/" && req.method == "GET") {
+    } else if (req.url === "/" && req.method === "GET") {
         serveFile(200, '/index.html', res, 'text/html');
-    } else if (req.url == "/" && req.method == "POST") {
+    } else if (req.url === "/" && req.method === "POST") {
         saveHomework(req, res);
-    } else if (req.url == "/admin" && req.method == "GET") {
+    } else if (req.url === "/admin" && req.method === "GET") {
         serveAdmin(req, res);
     } else {
         console.log("File Not Found");
