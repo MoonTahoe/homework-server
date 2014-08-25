@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Croissant+One|Creepster' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Turn in your Homework</title>
+</head>
+<body>
+
+<h1>Turn in your homework</h1>
+
+<form action="/" method="post" enctype="multipart/form-data">
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" name="firstName" required />
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="lastName" required />
+    <label for="email">Email Address</label>
+    <input type="email" name="email" id="email" placeholder="your@email.here" required />
+    <label for="homeworkFile">Homework</label>
+    <input type="file" name="homeworkFile" id="homeworkFile" />
+    <button>Submit Homework</button>
+</form>
+
+</body>
+</html>

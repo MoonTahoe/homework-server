@@ -1,0 +1,23 @@
+body {
+    background-color: #FFF8D1;
+    color: #E83519;
+    font-family: 'Creepster', Verdana;
+}
+
+label {
+    display: block;
+}
+
+label, input, button {
+    margin: 1em;
+}
+
+strong {
+    font-family: "Croissant One", Arial;
+    color: #642DFF;
+}
+
+button {
+    padding: 1em;
+    width: 80%;
+}
